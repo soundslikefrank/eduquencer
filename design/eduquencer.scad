@@ -14,6 +14,8 @@ button_height = 6;
 jack_width = 9;
 jack_height = 10.5;
 
+pot_width = 12;
+pot_height = 11.35;
 
 // increase resolution of the cylinders
 $fs = 0.1;
@@ -43,18 +45,40 @@ group() {
       valign="center"
     );
   buttons(
-      hole_width_edge - button_width / 2,
-      hp * width_1hp - hole_width_edge + button_width / 2,
-      panel_height / 2,
-      panel_height - hole_height_edge - 6,
+      hole_width_edge,
+      hp * width_1hp - hole_width_edge,
+      panel_height / 2 + 12,
+      panel_height - hole_height_edge - 12,
       button_cols,
       button_rows
   );
+  translate([0, panel_height / 2 - 1, 0])
+    group() {
+      translate([hole_width_edge, 0, 0])
+        group() {
+          pot();
+          translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
+            jack();
+        }
+      translate([hp * width_1hp / 2, 0, 0])
+        group() {
+          pot();
+          translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
+            jack();
+        }
+      translate([hp * width_1hp  - hole_width_edge, 0, 0])
+        group() {
+          pot();
+          translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
+            jack();
+        }
+    }
+
   jacks(
-    hole_width_edge - button_width / 2,
-    hp * width_1hp - hole_width_edge + button_width / 2,
-    hole_height_edge + 6,
-    panel_height / 2 - 6,
+    hole_width_edge,
+    hp * width_1hp - hole_width_edge,
+    hole_height_edge + 10,
+    panel_height / 2 - jack_height - pot_height - 14,
     jack_cols,
     jack_rows
   );
@@ -67,18 +91,28 @@ module buttons(x_low, x_high, y_low, y_high, cols, rows) {
   row_step = (
     rows == 1 ?
     (h - button_height) :
-    (h - rows * button_height) / (rows - 1)
+    (h - (rows - 1) * button_height) / (rows - 1)
   );
-  col_step = (w - cols * button_width) / (cols - 1);
+  col_step = (w - (cols - 1) * button_width) / (cols - 1);
 
   for(r=[0:rows - 1])
     for(c=[0:cols - 1])
       translate([
-        x_low + button_width / 2 + c * (col_step + button_width),
-        y_high - button_height / 2 - r * (row_step + button_height),
+        x_low + c * (col_step + button_width),
+        y_high - r * (row_step + button_height),
         0
       ])
-        button();
+        group() {
+          button();
+          translate([-button_width / 2, button_height / 2 + 1, 0])
+            color("yellow")
+            text(
+              str(1 + (r * cols + c) % 8),
+              font="Liberation Sans Narrow",
+              size=3,
+              halign="left"
+            );
+        }
 }
 
 module jacks(
@@ -95,18 +129,32 @@ module jacks(
   row_step = (
     rows == 1 ?
     (h - jack_height) :
-    (h - rows * jack_height) / (rows - 1)
+    (h - (rows - 1) * jack_height) / (rows - 1)
   );
-  col_step = (w - cols * jack_width) / (cols - 1);
+  col_step = (w - (cols - 1) * jack_width) / (cols - 1);
 
-  for(r=[0:rows - 1])
-    for(c=[0:cols - 1])
+  for(r=[0:rows - 1]) for(c=[0:cols - 1])
       translate([
-        x_low + jack_width / 2 + c * (col_step + jack_width),
-        y_high - jack_height / 2 - r * (row_step + jack_height),
+        x_low + c * (col_step + jack_width),
+        y_high - r * (row_step + jack_height),
         0
       ])
-        jack();
+        group() {
+          jack();
+          translate([-jack_width / 2, jack_height / 2 + 2, 0])
+            color("yellow")
+            text(
+              str(1 + (r * cols + c) % 8),
+              font="Liberation Sans Narrow",
+              size=3,
+              halign="left"
+            );
+        }
+}
+
+module pot() {
+  color("lightgrey")
+  import("RD901F-40-15R1.amf");
 }
 
 module button() {
