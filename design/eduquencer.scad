@@ -230,6 +230,12 @@ module mounting_hole(diameter, width) {
   }
 }
 
+module rpi() {
+  translate([-25, -11.5])
+    color("green")
+    square([50, 23]);
+}
+
 module mounting_holes (panel_width) {
   // top left
   translate([hole_width_edge, panel_height - hole_height_edge, 0]) {
