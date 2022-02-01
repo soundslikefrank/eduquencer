@@ -26,9 +26,11 @@ hp = 14; // [2:16]
 button_rows = 4; // [1:4]
 jack_rows = 2; // [1:4]
 
-button_cols = 6; // [2:8]
+button_cols = 4; // [2:8]
 jack_cols = 4; // [1:5]
 
+jack_start = hole_width_edge - jack_width / 2;
+panel_width = hp * width_1hp;
 
 group() {
   face_plate(hp);
@@ -54,7 +56,14 @@ group() {
   );
   translate([0, panel_height / 2 - 1, 0])
     group() {
-      translate([hole_width_edge, 0, 0])
+      translate([
+        hole_width_edge +
+        1 * (jack_width + (
+          panel_width - 2 * hole_width_edge - 6 * jack_width
+        ) / 6),
+        0,
+        0
+      ])
         group() {
           pot();
           translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
@@ -62,11 +71,17 @@ group() {
         }
       translate([hp * width_1hp / 2, 0, 0])
         group() {
-          pot();
           translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
             jack();
         }
-      translate([hp * width_1hp  - hole_width_edge, 0, 0])
+      translate([
+        hole_width_edge +
+        5 * (jack_width + (
+          panel_width - 2 * hole_width_edge - 6 * jack_width
+        ) / 6),
+        0,
+        0
+      ])
         group() {
           pot();
           translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
@@ -76,7 +91,7 @@ group() {
 
   jacks(
     hole_width_edge,
-    hp * width_1hp - hole_width_edge,
+    panel_width - hole_width_edge,
     hole_height_edge + 10,
     panel_height / 2 - jack_height - pot_height - 14,
     jack_cols,
