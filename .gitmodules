@@ -1,0 +1,3 @@
+[submodule "hardware/models"]
+	path = hardware/models
+	url = git@git.sr.ht:~chmanie/kicad-models
