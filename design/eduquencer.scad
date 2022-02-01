@@ -20,11 +20,13 @@ $fs = 0.1;
 
 module_name = "eduquencer";
 hp = 14; // [2:16]
-button_rows = 4; // [1:4]
-button_cols = 6; // [2:8]
 
-jack_cols = 4; // [1:5]
+button_rows = 4; // [1:4]
 jack_rows = 2; // [1:4]
+
+button_cols = 6; // [2:8]
+jack_cols = 4; // [1:5]
+
 
 group() {
   face_plate(hp);
