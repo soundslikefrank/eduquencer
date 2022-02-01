@@ -65,7 +65,8 @@ group() {
         0
       ])
         group() {
-          pot();
+          rotate(-90)
+            pot();
           translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
             jack();
         }
@@ -83,7 +84,8 @@ group() {
         0
       ])
         group() {
-          pot();
+          rotate(90)
+            pot();
           translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
             jack();
         }
@@ -112,7 +114,7 @@ module buttons(x_low, x_high, y_low, y_high, cols, rows) {
 
   for(r=[0:rows - 1])
     for(c=[0:cols - 1]) {
-      n = 1 + (r * cols + c);
+      n = (r * cols + c);
 
       translate([
         x_low + c * (col_step + button_width),
@@ -122,10 +124,14 @@ module buttons(x_low, x_high, y_low, y_high, cols, rows) {
         group() {
           rotate(n > 7 ? 45 : -45)
             button();
+          translate([button_width / 2 - 3.1, button_height / 2 + 1, 0])
+            color((n < 8 && n % 3 == 0) || n % 13 == 0 ? "#f9ba4d" : "#85c4a0")
+            rotate(-45)
+            square([3,2]);
           translate([-button_width / 2, button_height / 2, 0])
             color("yellow")
             text(
-              str(n % 8),
+              str(1 + n % 8),
               font="Liberation Sans Narrow",
               size=3,
               halign="left"
@@ -180,7 +186,7 @@ module pot() {
 module button() {
     translate([-5, 3, 0])
       rotate([90, 0, 0])
-        color("grey")
+        color("#a0a0a0")
         import("CUI_DEVICES_TS04-66-73-BK-100-SMT.STL");
 }
 
@@ -195,7 +201,7 @@ module face_plate(hp) {
   difference() {
     rotate([-90, 0, 0])
       translate([0, 0, 0])
-        color("pink")
+        color("purple")
         cube([width, thickness, panel_height]);
     mounting_holes(width);
   }
