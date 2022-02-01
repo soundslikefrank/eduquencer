@@ -111,23 +111,27 @@ module buttons(x_low, x_high, y_low, y_high, cols, rows) {
   col_step = (w - (cols - 1) * button_width) / (cols - 1);
 
   for(r=[0:rows - 1])
-    for(c=[0:cols - 1])
+    for(c=[0:cols - 1]) {
+      n = 1 + (r * cols + c);
+
       translate([
         x_low + c * (col_step + button_width),
         y_high - r * (row_step + button_height),
         0
       ])
         group() {
-          button();
-          translate([-button_width / 2, button_height / 2 + 1, 0])
+          rotate(n > 7 ? 45 : -45)
+            button();
+          translate([-button_width / 2, button_height / 2, 0])
             color("yellow")
             text(
-              str(1 + (r * cols + c) % 8),
+              str(n % 8),
               font="Liberation Sans Narrow",
               size=3,
               halign="left"
             );
         }
+    }
 }
 
 module jacks(
@@ -155,8 +159,9 @@ module jacks(
         0
       ])
         group() {
-          jack();
-          translate([-jack_width / 2, jack_height / 2 + 2, 0])
+          rotate(-45)
+            jack();
+          translate([-jack_width / 2, jack_height / 2, 0])
             color("yellow")
             text(
               str(1 + (r * cols + c) % 8),
