@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name "SN74AHCT244PW")(type "KiCad")(uri "/home/chris/dev/synths/eduquencer/hardware/models/SN74AHCT244PW.pretty/SN74AHCT244PW.kicad_sym")(options "")(descr ""))
   (lib (name "ADP150AUJZ-3.3-R7")(type "KiCad")(uri "/home/chris/dev/synths/eduquencer/hardware/models/ADP150AUJZ-3.3-R7.pretty/ADP150AUJZ-3.3-R7.kicad_sym")(options "")(descr ""))
+  (lib (name "DAC80501MDGST")(type "KiCad")(uri "/home/chris/dev/synths/eduquencer/hardware/models/DAC80501MDGST.pretty/DAC80501MDGST.kicad_sym")(options "")(descr ""))
 )

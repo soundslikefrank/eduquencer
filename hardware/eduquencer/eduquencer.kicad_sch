@@ -953,6 +953,9 @@
     (path "/54703767-1957-4e84-bd51-874543a55b2b"
       (reference "IC?") (unit 1) (value "SN74AHCT244PW") (footprint "SN74AHCT244PW:SOP65P640X120-20N")
     )
+    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/63085d07-f111-48f0-9996-774660e796f0"
+      (reference "IC?") (unit 1) (value "DAC80501MDGST") (footprint "SOP50P490X110-10N")
+    )
     (path "/45a0ea3a-da06-4958-b002-46f0015400cc/00000000-0000-0000-0000-00005fdff083"
       (reference "J?") (unit 1) (value "Eurorack PWR") (footprint "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical")
     )
