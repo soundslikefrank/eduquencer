@@ -8,6 +8,7 @@ use cortex_m_rt::entry;
 use defmt::*;
 use defmt_rtt as _;
 use embedded_hal::digital::v2::OutputPin;
+use embedded_hal::prelude::*;
 use embedded_time::fixed_point::FixedPoint;
 use panic_probe as _;
 
@@ -16,14 +17,19 @@ use panic_probe as _;
 use rp_pico as bsp;
 // use sparkfun_pro_micro_rp2040 as bsp;
 
+use embedded_hal::spi::MODE_0;
+use embedded_time::rate::*;
+
 use bsp::hal::{
     clocks::{init_clocks_and_plls, Clock},
-    pac,
-    sio::Sio,
+    gpio::FunctionSpi,
+    pac, spi,
     watchdog::Watchdog,
+    Sio,
 };
 
-#[entry]
+// For rust-analyzer we disable the #[entry] macro
+#[cfg_attr(not(test), entry)]
 fn main() -> ! {
     info!("Program start");
     let mut pac = pac::Peripherals::take().unwrap();
@@ -33,6 +39,7 @@ fn main() -> ! {
 
     // External high-speed crystal on the pico board is 12Mhz
     let external_xtal_freq_hz = 12_000_000u32;
+
     let clocks = init_clocks_and_plls(
         external_xtal_freq_hz,
         pac.XOSC,
@@ -45,8 +52,6 @@ fn main() -> ! {
     .ok()
     .unwrap();
 
-    let mut delay = cortex_m::delay::Delay::new(core.SYST, clocks.system_clock.freq().integer());
-
     let pins = bsp::Pins::new(
         pac.IO_BANK0,
         pac.PADS_BANK0,
@@ -56,12 +61,28 @@ fn main() -> ! {
 
     let mut led_pin = pins.led.into_push_pull_output();
 
+    let _cs_pin = pins.gpio17.into_mode::<FunctionSpi>();
+    let _ = pins.gpio18.into_mode::<FunctionSpi>();
+    let _ = pins.gpio19.into_mode::<FunctionSpi>();
+
+    let mut delay = cortex_m::delay::Delay::new(core.SYST, clocks.system_clock.freq().integer());
+
+    let spi = spi::Spi::<_, _, 8>::new(pac.SPI0);
+
+    let mut spi = spi.init(
+        &mut pac.RESETS,
+        clocks.peripheral_clock.freq(),
+        16_000_000u32.Hz(),
+        &MODE_0,
+    );
+
     loop {
         info!("on!");
         led_pin.set_high().unwrap();
         delay.delay_ms(500);
         info!("off!");
         led_pin.set_low().unwrap();
+        spi.write(&[255]).unwrap();
         delay.delay_ms(500);
     }
 }
