@@ -17,7 +17,7 @@ use panic_probe as _;
 use rp_pico as bsp;
 // use sparkfun_pro_micro_rp2040 as bsp;
 
-use embedded_hal::spi::MODE_0;
+use embedded_hal::spi::MODE_1;
 use embedded_time::rate::*;
 
 use bsp::hal::{
@@ -61,7 +61,7 @@ fn main() -> ! {
 
     let mut led_pin = pins.led.into_push_pull_output();
 
-    let _cs_pin = pins.gpio17.into_mode::<FunctionSpi>();
+    let mut cs_pin = pins.gpio17.into_push_pull_output();
     let _ = pins.gpio18.into_mode::<FunctionSpi>();
     let _ = pins.gpio19.into_mode::<FunctionSpi>();
 
@@ -73,8 +73,25 @@ fn main() -> ! {
         &mut pac.RESETS,
         clocks.peripheral_clock.freq(),
         16_000_000u32.Hz(),
-        &MODE_0,
+        &MODE_1,
     );
+
+    let gain_command = [
+        0b00000100,
+        0b00000001,
+        0b00000001,
+    ];
+
+    let command = [
+        0b00001000,
+        0b11111111,
+        0b11111111,
+    ];
+
+    // TODO: we might have to do that after some delay to give the dac time to initialize
+    cs_pin.set_low().unwrap();
+    spi.write(&gain_command).unwrap();
+    cs_pin.set_high().unwrap();
 
     loop {
         info!("on!");
@@ -82,7 +99,9 @@ fn main() -> ! {
         delay.delay_ms(500);
         info!("off!");
         led_pin.set_low().unwrap();
-        spi.write(&[255]).unwrap();
+        cs_pin.set_low().unwrap();
+        spi.write(&command).unwrap();
+        cs_pin.set_high().unwrap();
         delay.delay_ms(500);
     }
 }
