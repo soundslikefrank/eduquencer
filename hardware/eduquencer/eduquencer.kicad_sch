@@ -312,10 +312,17 @@
     (uuid 69678210-8068-42bd-84d3-347d42d01393)
   )
 
-  (global_label "i2c1_scl" (shape input) (at 236.22 43.18 180) (fields_autoplaced)
+  (global_label "spi0_cs" (shape input) (at 236.22 43.18 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 052bcb94-282e-4600-acdb-220b2bc3c31c)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 225.945 43.1006 0)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 226.7312 43.1006 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "spi0_sck" (shape input) (at 236.22 46.99 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 157687ae-cc37-4cef-9d26-530bde600876)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 225.7031 46.9106 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -354,10 +361,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "i2c1_sda" (shape input) (at 236.22 39.37 180) (fields_autoplaced)
+  (global_label "spi0_tx" (shape input) (at 236.22 39.37 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 884de481-59f4-4e9c-b676-0d7f88111abc)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 225.4007 39.2906 0)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 227.094 39.2906 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -670,17 +677,21 @@
     (property "Sheet file" "dac.kicad_sch" (id 1) (at 236.22 56.4646 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "dac_sda" input (at 236.22 39.37 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 82db9877-34dc-46a8-8bd0-51b219bb8cc7)
-    )
-    (pin "dac_scl" input (at 236.22 43.18 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 7b086453-a217-4027-96da-572418b0d038)
-    )
     (pin "dac_out" output (at 267.97 39.37 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid c9bb2724-b1b9-4e28-b2f3-054c1f8df537)
+    )
+    (pin "dac_sdin" input (at 236.22 39.37 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 46a00454-cc3c-4900-877a-5f83f0a51700)
+    )
+    (pin "dac_cs" input (at 236.22 43.18 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid d700bfb0-c97f-4f34-820d-d1053b6f7366)
+    )
+    (pin "dac_sclk" input (at 236.22 46.99 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid b48175a7-7491-4149-ace5-9efe89cae35c)
     )
   )
 
@@ -812,16 +823,16 @@
     (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/00000000-0000-0000-0000-0000611b8584"
       (reference "#PWR?") (unit 1) (value "VEE") (footprint "")
     )
-    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/00000000-0000-0000-0000-0000611b9b4a"
-      (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
-    )
-    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/00000000-0000-0000-0000-0000611ba2f7"
+    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/009e4343-7b98-49e1-8074-1ac2bc72ed72"
       (reference "#PWR?") (unit 1) (value "VEE") (footprint "")
     )
     (path "/18354804-9c54-4f3f-941d-a806432fe483"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/45a0ea3a-da06-4958-b002-46f0015400cc/1d2defd9-8573-4391-aef6-70cd86c5e403"
+      (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/1d850c41-d948-41ac-872d-30888de23d28"
       (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
     )
     (path "/42600888-9050-4f26-a06e-53bc1a336bc6"
@@ -846,6 +857,12 @@
       (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
     )
     (path "/45a0ea3a-da06-4958-b002-46f0015400cc/d6d88677-72f7-4708-995d-c7e45976dcfb"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/e18628cb-ce10-4eb4-93dd-703daf612432"
+      (reference "#PWR?") (unit 1) (value "+3.3VA") (footprint "")
+    )
+    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/e387b3da-1b1e-4084-83ba-3fa8e6c7f673"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/f6a3894a-1850-4351-881f-21a8520b82c4"
@@ -944,6 +961,9 @@
     (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/63085d07-f111-48f0-9996-774660e796f0"
       (reference "IC?") (unit 1) (value "DAC80501MDGST") (footprint "SOP50P490X110-10N")
     )
+    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/781988b9-6038-4016-8fbb-ac5e08a380c1"
+      (reference "IC?") (unit 1) (value "OPA172IDR") (footprint "SOIC127P600X175-8N")
+    )
     (path "/8980d219-a2f4-4dd5-b425-14b63a1f3038"
       (reference "IC?") (unit 1) (value "SN74AHCT244NSR") (footprint "SOIC127P780X200-20N")
     )
@@ -1009,12 +1029,6 @@
     )
     (path "/3ea32a21-cebb-4ee4-9c8c-55bda166121d/00000000-0000-0000-0000-00005fe5d69e"
       (reference "U?") (unit 1) (value "MCP6002-xMS") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
-    )
-    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/00000000-0000-0000-0000-000060ab805f"
-      (reference "U?") (unit 1) (value "OPA4172") (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm")
-    )
-    (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/00000000-0000-0000-0000-000060b3e5cf"
-      (reference "U?") (unit 1) (value "OPA4172") (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm")
     )
     (path "/45a0ea3a-da06-4958-b002-46f0015400cc/00000000-0000-0000-0000-0000610ab8b4"
       (reference "U?") (unit 1) (value "LM1117-5.0") (footprint "Package_TO_SOT_SMD:SOT-223")
