@@ -631,7 +631,7 @@
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid 3ea32a21-cebb-4ee4-9c8c-55bda166121d)
-    (property "Sheet name" "CV Input1" (id 0) (at 236.22 118.6684 0)
+    (property "Sheet name" "CV Input" (id 0) (at 236.22 118.6684 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Sheet file" "cv_input.kicad_sch" (id 1) (at 236.22 135.2046 0)
