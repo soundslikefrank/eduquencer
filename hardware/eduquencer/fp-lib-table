@@ -1,6 +1,9 @@
 (fp_lib_table
-  (lib (name "DAC80501MDGST")(type "KiCad")(uri "/home/chris/dev/synths/eduquencer/hardware/models/DAC80501MDGST.pretty")(options "")(descr ""))
-  (lib (name "SN74AHCT244PW")(type "KiCad")(uri "/home/chris/dev/synths/eduquencer/hardware/models/SN74AHCT244PW.pretty")(options "")(descr ""))
-  (lib (name "ADP150AUJZ-3.3-R7")(type "KiCad")(uri "/home/chris/dev/synths/eduquencer/hardware/models/ADP150AUJZ-3.3-R7.pretty")(options "")(descr ""))
-  (lib (name "MCP23018-E_SO")(type "KiCad")(uri "/home/chris/dev/synths/eduquencer/hardware/models/MCP23018-E_SO.pretty")(options "")(descr ""))
+  (lib (name "DAC80501MDGST")(type "KiCad")(uri "${KIPRJMOD}/models/DAC80501MDGST.pretty")(options "")(descr ""))
+  (lib (name "ADP150AUJZ-3.3-R7")(type "KiCad")(uri "${KIPRJMOD}/models/ADP150AUJZ-3.3-R7.pretty")(options "")(descr ""))
+  (lib (name "MCP23018-E_SO")(type "KiCad")(uri "${KIPRJMOD}/models/MCP23018-E_SO.pretty")(options "")(descr ""))
+  (lib (name "RaspberryPi-Pico")(type "KiCad")(uri "${KIPRJMOD}/models/RaspberryPi-Pico.pretty")(options "")(descr ""))
+  (lib (name "OPA172IDR")(type "KiCad")(uri "${KIPRJMOD}/models/OPA172IDR.pretty")(options "")(descr ""))
+  (lib (name "PJ398SM-12")(type "KiCad")(uri "${KIPRJMOD}/models/PJ398SM-12.pretty")(options "")(descr ""))
+  (lib (name "SN74AHCT244NSR")(type "KiCad")(uri "${KIPRJMOD}/models/SN74AHCT244NSR.pretty")(options "")(descr ""))
 )

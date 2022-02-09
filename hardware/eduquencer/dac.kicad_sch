@@ -555,7 +555,7 @@
   (no_connect (at 180.34 80.01) (uuid 91ddf26a-a4c9-4375-9cfa-1fbe7082f412))
   (no_connect (at 180.34 87.63) (uuid 91ddf26a-a4c9-4375-9cfa-1fbe7082f413))
   (no_connect (at 92.71 144.78) (uuid e3a68988-1dfb-4313-914c-6c198f281889))
-  (no_connect (at 57.15 147.32) (uuid e3a68988-1dfb-4313-914c-6c198f281889))
+  (no_connect (at 57.15 147.32) (uuid e3a68988-1dfb-4313-914c-6c198f28188a))
 
   (wire (pts (xy 52.07 97.79) (xy 52.07 93.98))
     (stroke (width 0) (type default) (color 0 0 0 0))
