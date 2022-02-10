@@ -8,6 +8,8 @@ hole_diameter = 3.2;
 hole_height_edge = 3; // distance from hole center to panel edge
 hole_width_edge = 7.5; // distance from hole center to panel edge
 
+outline_width = 0.4;
+
 button_width = 10;
 button_height = 6;
 
@@ -32,74 +34,79 @@ jack_cols = 4; // [1:5]
 jack_start = hole_width_edge - jack_width / 2;
 panel_width = hp * width_1hp;
 
-group() {
-  face_plate(hp);
-  translate([
-    (hp * width_1hp / 2),
-    panel_height - hole_height_edge
-  ])
-    color("yellow")
-    text(
-      module_name,
-      font="Liberation Sans Narrow",
-      size=3,
-      halign="center",
-      valign="center"
-    );
-  buttons(
-      hole_width_edge,
-      hp * width_1hp - hole_width_edge,
-      panel_height / 2 + 12,
-      panel_height - hole_height_edge - 12,
-      button_cols,
-      button_rows
-  );
-  translate([0, panel_height / 2 - 1, 0])
-    group() {
-      translate([
-        hole_width_edge +
-        1 * (jack_width + (
-          panel_width - 2 * hole_width_edge - 6 * jack_width
-        ) / 6),
-        0,
-        0
-      ])
-        group() {
-          rotate(-90)
-            pot();
-          translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
-            jack();
-        }
-      translate([hp * width_1hp / 2, 0, 0])
-        group() {
-          translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
-            jack();
-        }
-      translate([
-        hole_width_edge +
-        5 * (jack_width + (
-          panel_width - 2 * hole_width_edge - 6 * jack_width
-        ) / 6),
-        0,
-        0
-      ])
-        group() {
-          rotate(90)
-            pot();
-          translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
-            jack();
-        }
-    }
+// projection()
+  group() {
+    difference() {
+      face_plate(hp);
+      translate([0, 0, -thickness - 0.5])
+        linear_extrude(height=thickness + 1, center=false)
+          group() {
+            translate([
+              (hp * width_1hp / 2),
+              panel_height - hole_height_edge
+            ])
+              color("yellow")
+              text(
+                module_name,
+                font="Liberation Sans Narrow",
+                size=3,
+                halign="center",
+                valign="center"
+              );
+            buttons(
+                hole_width_edge,
+                hp * width_1hp - hole_width_edge,
+                panel_height / 2 + 12,
+                panel_height - hole_height_edge - 12,
+                button_cols,
+                button_rows
+            );
+            translate([0, panel_height / 2 - 1, 0])
+              group() {
+                translate([
+                  hole_width_edge +
+                  1 * (jack_width + (
+                    panel_width - 2 * hole_width_edge - 6 * jack_width
+                  ) / 6),
+                  0,
+                  0
+                ])
+                  group() {
+                    pot();
+                    translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
+                      jack();
+                  }
+                translate([hp * width_1hp / 2, 0, 0])
+                  group() {
+                    translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
+                      jack();
+                  }
+                translate([
+                  hole_width_edge +
+                  5 * (jack_width + (
+                    panel_width - 2 * hole_width_edge - 6 * jack_width
+                  ) / 6),
+                  0,
+                  0
+                ])
+                  group() {
+                    pot();
+                    translate([0, -(pot_height / 2 + jack_height / 2 + 6), 0])
+                      jack();
+                  }
+              }
 
-  jacks(
-    hole_width_edge,
-    panel_width - hole_width_edge,
-    hole_height_edge + 10,
-    panel_height / 2 - jack_height - pot_height - 14,
-    jack_cols,
-    jack_rows
-  );
-}
+            jacks(
+              hole_width_edge - 0.5,
+              panel_width - hole_width_edge - 0.5,
+              hole_height_edge + 10,
+              panel_height / 2 - jack_height - pot_height - 14,
+              jack_cols,
+              jack_rows
+            );
+          }
+    }
+  }
 
 module buttons(x_low, x_high, y_low, y_high, cols, rows) {
   w = x_high - x_low;
@@ -178,21 +185,82 @@ module jacks(
         }
 }
 
+_p_d_top = -6.4;
+_p_d_bot = +4.75;
+_p_w = 9.4;
+
 module pot() {
-  color("lightgrey")
-  import("RD901F-40-15R1.amf");
+  // color([0,0,0,0.2])
+  // import("RD901F-40-15R1.amf");
+  color("yellow")
+  group() {
+    circle(r=0.8);
+    polygon(points=[
+      [-_p_w / 2, _p_d_top],
+      [-_p_w / 2, _p_d_bot],
+      [+_p_w / 2, _p_d_bot],
+      [+_p_w / 2, _p_d_top],
+
+      [-_p_w / 2 + outline_width, _p_d_top + outline_width],
+      [-_p_w / 2 + outline_width, _p_d_bot - outline_width],
+      [+_p_w / 2 - outline_width, _p_d_bot - outline_width],
+      [+_p_w / 2 - outline_width, _p_d_top + outline_width],
+    ], paths=[[0,1,2,3], [4,5,6,7]]);
+  }
 }
 
 module button() {
-    translate([-5, 3, 0])
-      rotate([90, 0, 0])
-        color("#a0a0a0")
-        import("CUI_DEVICES_TS04-66-73-BK-100-SMT.STL");
+  color("yellow")
+  circle(0.8);
+  square([button_height, outline_width], center=true);
+  translate([-button_height / 2, -button_width / 2 + 2, 0])
+    group() {
+      difference() {
+        square([button_height, button_height]);
+        translate([outline_width / 2, outline_width / 2, 0])
+          square([button_height - outline_width, button_height - outline_width]);
+      }
+    }
+  // translate([-5, 3, 0])
+  //   rotate([90, 0, 0])
+  //   color([0,0,0,0.2])
+  //   import("CUI_DEVICES_TS04-66-73-BK-100-SMT.STL");
 }
 
+_j_d_top = -4.5;
+_j_d_bot = 6;
+
 module jack() {
-  color("grey")
-  import("WQP-PJ398SM.amf");
+  group() {
+    // color([0,0,0,0.2])
+    // import("WQP-PJ398SM.amf");
+    color("yellow")
+    union() {
+      circle(r=0.8);
+      polygon(points=[
+        [-jack_width / 2, _j_d_top],
+        [-jack_width / 2, _j_d_bot],
+        [+jack_width / 2, _j_d_bot],
+        [+jack_width / 2, _j_d_top],
+
+        [-jack_width / 2 + outline_width, _j_d_top + outline_width],
+        [-jack_width / 2 + outline_width, _j_d_bot - outline_width],
+        [+jack_width / 2 - outline_width, _j_d_bot - outline_width],
+        [+jack_width / 2 - outline_width, _j_d_top + outline_width],
+      ], paths=[[0,1,2,3], [4,5,6,7]]);
+      // polygon(points=[
+      //   [-outline_width / 2, -jack_height / 2 - 1.3],
+      //   [-outline_width / 2, +jack_height / 2 + 0.8],
+      //   [+outline_width / 2, +jack_height / 2 + 0.8],
+      //   [+outline_width / 2, -jack_height / 2 - 1.3],
+
+      //   [-jack_width / 2, -outline_width / 2],
+      //   [-jack_width / 2, +outline_width / 2],
+      //   [+jack_width / 2, +outline_width / 2],
+      //   [+jack_width / 2, -outline_width / 2],
+      // ], paths=[[0,1,2,3], [4,5,6,7]]);
+    }
+  }
 }
 
 module face_plate(hp) {
