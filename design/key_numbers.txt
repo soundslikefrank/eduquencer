@@ -1,0 +1,29 @@
+# panel
+  width = 71,1
+  height = 128,5
+
+# panel frame
+  left = 7,5
+  right = 63,6
+  width = 56,1
+  top = 3
+  bottom = 125,5
+
+# buttons horizontal
+  x_space = right - left = 56,1
+  x_space / 3 = 18,7
+  left + 1 * x_space / 3 = 26,2
+  left + 2 * x_space / 3 = 44,9
+  left + 3 * x_space / 3 = 63,6
+
+# buttons vertical
+  y_top = 15
+  y_bottom = 52,5
+  y_space = 37,5
+  y_distance = y_space / 3 = 12,5
+
+  y_top + 1 * y_distance = 27,5
+  y_top + 2 * y_distance = 40
+  y_top + 3 * y_distance = 52,5
+
+
