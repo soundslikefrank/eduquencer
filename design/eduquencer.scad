@@ -165,7 +165,8 @@ module jacks(
   );
   col_step = (w - (cols - 1) * jack_width) / (cols - 1);
 
-  for(r=[0:rows - 1]) for(c=[0:cols - 1])
+  for(r=[0:rows - 1])
+    for(c=[0:cols - 1])
       translate([
         x_low + c * (col_step + jack_width),
         y_high - r * (row_step + jack_height),

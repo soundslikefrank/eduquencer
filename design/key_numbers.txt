@@ -26,4 +26,34 @@
   y_top + 2 * y_distance = 40
   y_top + 3 * y_distance = 52,5
 
+# jacks
+  height = 6,48 + 4,92 + 2 * 0,25 = 11,9
+  width_body = 9
 
+  y_top = 128,5 - 28,4 = 100,1
+  y_bottom = 128,5 - 13 = 115,5
+
+  x_first = 7
+  x_last = 63.1
+  x_dist = (x_last - x_first) / 3 = 18,7
+
+# pots
+  y = height / 2 + 1 ~= 65
+  x1 = (
+    left +
+    1 * (jack_width + (
+    panel_width - 2 * hole_width_edge - 6 * jack_width
+    ) / 6)
+  ) = (7,5 + 1 * (9 + ( 56,1 - 6 * 9) / 6)) = 16,85
+  x2 = (
+    hole_width_edge +
+    5 * (jack_width + (
+      panel_width - 2 * hole_width_edge - 6 * jack_width
+    ) / 6),
+  ) = (7,5 + 5 * (9 + ( 56,1 - 6 * 9) / 6)) = 54,25
+
+
+# input jacks
+
+  y = pots_y + (pot_height) / 2 + (jack_height) / 2 + 6 = (
+    65 +  (12.5 / 2) +  12.8 / 2 + 3 ~= 81
