@@ -1323,17 +1323,29 @@
     (path "/3ea32a21-cebb-4ee4-9c8c-55bda166121d/28011e04-6768-43d6-9718-890840dfc028"
       (reference "#PWR?") (unit 1) (value "+12V") (footprint "")
     )
+    (path "/5b8fece9-be36-46a7-9d0e-2ff3cd7cbc98/29268e3c-d66a-47b0-b438-20e4c37db4b5"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/37471229-cb35-48f1-b5e4-2dafcc2acabe"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/5b8fece9-be36-46a7-9d0e-2ff3cd7cbc98/3bb5327b-9465-433e-8366-0f2a616e9200"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/42600888-9050-4f26-a06e-53bc1a336bc6"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/5b8fece9-be36-46a7-9d0e-2ff3cd7cbc98/44591e65-79b1-417a-b896-9ea635f33afb"
+      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/3ea32a21-cebb-4ee4-9c8c-55bda166121d/464835e2-8eaa-453f-9e57-aae7c38e15ca"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/4a9d2853-824c-43db-94d2-7d0f14c4381c"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/5b8fece9-be36-46a7-9d0e-2ff3cd7cbc98/51afef8a-692a-433f-bb40-17ed63c5df9a"
+      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/45a0ea3a-da06-4958-b002-46f0015400cc/62d604c2-eb25-4f38-a811-e27393e00565"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
@@ -1580,6 +1592,9 @@
     )
     (path "/bf6bf70b-25d6-4a26-842f-eb37dee14c71/00000000-0000-0000-0000-000060ac1771"
       (reference "R?") (unit 1) (value "180k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/5b8fece9-be36-46a7-9d0e-2ff3cd7cbc98/043bbcd0-1f36-4c86-af46-8978be2ba0fe"
+      (reference "R?") (unit 1) (value "10k") (footprint "")
     )
     (path "/3ea32a21-cebb-4ee4-9c8c-55bda166121d/0b8be5aa-b976-4631-a22c-133d8defbfc5"
       (reference "R?") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
