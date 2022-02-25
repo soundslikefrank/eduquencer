@@ -6,4 +6,5 @@
   (lib (name "OPA172IDR")(type "KiCad")(uri "${KIPRJMOD}/models/OPA172IDR.pretty/OPA172IDR.kicad_sym")(options "")(descr ""))
   (lib (name "SN74AHCT244NSR")(type "KiCad")(uri "${KIPRJMOD}/models/SN74AHCT244NSR.pretty/SN74AHCT244NSR.kicad_sym")(options "")(descr ""))
   (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/models/RaspberryPi-Pico.pretty/MCU_RaspberryPi_and_Boards.kicad_sym")(options "")(descr ""))
+  (lib (name "PJ398SM-12")(type "KiCad")(uri "${KIPRJMOD}/models/PJ398SM-12.pretty/PJ398SM-12.kicad_sym")(options "")(descr ""))
 )

@@ -7,4 +7,5 @@
   (lib (name "PJ398SM-12")(type "KiCad")(uri "${KIPRJMOD}/models/PJ398SM-12.pretty")(options "")(descr ""))
   (lib (name "SN74AHCT244NSR")(type "KiCad")(uri "${KIPRJMOD}/models/SN74AHCT244NSR.pretty")(options "")(descr ""))
   (lib (name "Panel")(type "KiCad")(uri "${KIPRJMOD}/../../design/footprint")(options "")(descr ""))
+  (lib (name "AudioJacks")(type "KiCad")(uri "${KIPRJMOD}/models/AudioJacks.pretty")(options "")(descr ""))
 )
