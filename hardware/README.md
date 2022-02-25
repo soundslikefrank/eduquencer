@@ -1,5 +1,21 @@
 # Eduquencer pcb schematic and design
 
+## TODO
+
+### Path to PCB prototype
+- [ ] Finish the schematic
+  - [ ] Wire up rpi
+  - [ ] Add circuits for clock and reset
+  - [ ] Add LED circuits
+  - [ ] Adjust DAC opamp resistor for proper range (+add DAC out jack)
+  - [ ] Add all the trigger jacks (+circuit around them, there might be some more resistors needed?)
+  - [ ] Add test-points for all i2c and SPI
+  - [ ] Add debug header for flashing the rpi
+- [ ] Preliminary layout with all components (only footprint placement)
+- [ ] Decide on a name
+- [ ] Decide which jacks to use
+- [ ] Do the final layout
+
 ## Preliminary BOM (per board)
 - 1x RPI Pico (3,90)
 - 3x https://www.digikey.de/de/products/detail/epcos-tdk-electronics/B72500D0160H060/1589537?s=N4IgTCBcDaIEIHYwFYAMqAiqCMA2VAEqviALoC%2BQA (1,5 @ 100)
