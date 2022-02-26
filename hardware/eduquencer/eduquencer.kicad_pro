@@ -437,8 +437,16 @@
       "LEDs"
     ],
     [
+      "f27d5be4-66ac-49bd-b481-775213af8981",
+      "Trigger Inputs"
+    ],
+    [
       "3ea32a21-cebb-4ee4-9c8c-55bda166121d",
       "CV Input"
+    ],
+    [
+      "5dfd3502-baa2-42e0-97d0-38b3e62598e1",
+      "Trigger Outputs"
     ],
     [
       "45a0ea3a-da06-4958-b002-46f0015400cc",
@@ -446,7 +454,7 @@
     ],
     [
       "bf6bf70b-25d6-4a26-842f-eb37dee14c71",
-      "DAC80501"
+      "DAC Output"
     ]
   ],
   "text_variables": {}

@@ -1153,7 +1153,7 @@
     (uuid b65cdc52-552e-44ff-abfb-ef7c1fb5cb64)
   )
 
-  (symbol (lib_id "Device:R_Small") (at 93.98 71.12 270)
+  (symbol (lib_id "Device:R_Small") (at 93.98 71.12 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 043bbcd0-1f36-4c86-af46-8978be2ba0fe)
     (property "Reference" "R?" (id 0) (at 93.98 66.04 90))
@@ -1168,7 +1168,7 @@
     (pin "2" (uuid 6714e2e1-9898-4b27-8435-8df9228a6d03))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 237.49 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 237.49 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 0c386859-abb1-4d41-b542-f79dff07f43c)
     (property "Reference" "LED?" (id 0) (at 241.3 111.7599 90)
@@ -1211,7 +1211,7 @@
     (pin "2" (uuid 205d6f96-77c3-413c-8c2b-337954fd72d5))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 119.38 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 119.38 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 0d798d6f-00f5-4ecd-b803-c8798ade1b82)
     (property "Reference" "R?" (id 0) (at 119.38 124.46 90))
@@ -1226,7 +1226,7 @@
     (pin "2" (uuid d88b3863-b375-4bf9-9b87-bc02caf85c2d))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 127 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 127 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 10dfb550-44b4-45bc-96ef-6994a952ed80)
     (property "Reference" "LED?" (id 0) (at 130.81 143.5099 90)
@@ -1269,7 +1269,7 @@
     (pin "2" (uuid 153a16cc-d18a-45e0-8279-f60fd84920a6))
   )
 
-  (symbol (lib_id "power:GND") (at 227.33 152.4 270)
+  (symbol (lib_id "power:GND") (at 227.33 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 1f92517a-a160-44ec-8482-6cce3155e0e9)
     (property "Reference" "#PWR?" (id 0) (at 220.98 152.4 0)
@@ -1285,7 +1285,7 @@
     (pin "1" (uuid 5f7dc9ee-b431-4133-9378-37fba8b625d0))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 203.2 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 203.2 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 223d3358-715a-4a3f-9595-3facacf9ae17)
     (property "Reference" "R?" (id 0) (at 203.2 156.21 90))
@@ -1300,7 +1300,7 @@
     (pin "2" (uuid acf837da-8f2e-4caf-80b3-0622dd7fef49))
   )
 
-  (symbol (lib_id "power:+3V3") (at 130.81 44.45 270)
+  (symbol (lib_id "power:+3V3") (at 130.81 44.45 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 26233592-bf68-4e18-a1b8-feeb2ca127c0)
     (property "Reference" "#PWR?" (id 0) (at 127 44.45 0)
@@ -1318,7 +1318,7 @@
     (pin "1" (uuid 36a79e11-f5fc-4a88-adfe-316a49d3df96))
   )
 
-  (symbol (lib_id "power:GND") (at 54.61 40.64 270)
+  (symbol (lib_id "power:GND") (at 54.61 40.64 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 29268e3c-d66a-47b0-b438-20e4c37db4b5)
     (property "Reference" "#PWR?" (id 0) (at 48.26 40.64 0)
@@ -1334,7 +1334,7 @@
     (pin "1" (uuid a76fd61c-c728-48d0-b1f3-8a42b6819bc1))
   )
 
-  (symbol (lib_id "power:GND") (at 200.66 120.65 270)
+  (symbol (lib_id "power:GND") (at 200.66 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2a1793d3-6cd1-4086-876a-250bc9f23c79)
     (property "Reference" "#PWR?" (id 0) (at 194.31 120.65 0)
@@ -1350,7 +1350,7 @@
     (pin "1" (uuid e2f62dac-68dc-4668-9b5d-b36e6879d84d))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 175.26 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 175.26 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2aee8dc5-020f-422d-8059-630906bd3b6b)
     (property "Reference" "R?" (id 0) (at 175.26 156.21 90))
@@ -1365,7 +1365,7 @@
     (pin "2" (uuid 89c54d49-e8dd-4534-950a-9e622ab38a88))
   )
 
-  (symbol (lib_id "Device:C") (at 154.94 48.26 0)
+  (symbol (lib_id "Device:C") (at 154.94 48.26 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3835009f-bcd8-41ea-b8e5-77d89ce656d1)
     (property "Reference" "C?" (id 0) (at 157.861 47.0916 0)
@@ -1390,7 +1390,7 @@
     (pin "2" (uuid 3e51ac71-0a85-4b92-9e66-9f3d1173bb21))
   )
 
-  (symbol (lib_id "power:GND") (at 85.09 73.66 90)
+  (symbol (lib_id "power:GND") (at 85.09 73.66 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3bb5327b-9465-433e-8366-0f2a616e9200)
     (property "Reference" "#PWR?" (id 0) (at 91.44 73.66 0)
@@ -1406,7 +1406,7 @@
     (pin "1" (uuid f85563c6-3285-46c6-a23f-d04429d9ad89))
   )
 
-  (symbol (lib_id "power:+3V3") (at 99.06 71.12 270)
+  (symbol (lib_id "power:+3V3") (at 99.06 71.12 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 44591e65-79b1-417a-b896-9ea635f33afb)
     (property "Reference" "#PWR?" (id 0) (at 95.25 71.12 0)
@@ -1424,7 +1424,7 @@
     (pin "1" (uuid 03e187d2-6c4a-4ece-841b-834d761b85d6))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 128.27 52.07 270)
+  (symbol (lib_id "Device:R_Small") (at 128.27 52.07 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 46e82c22-d505-48dc-baf8-39575599c985)
     (property "Reference" "R?" (id 0) (at 128.27 46.99 90))
@@ -1439,7 +1439,7 @@
     (pin "2" (uuid 3e8e8f50-8434-4131-9004-f86d414505c9))
   )
 
-  (symbol (lib_id "power:+3V3") (at 44.45 72.39 180)
+  (symbol (lib_id "power:+3V3") (at 44.45 72.39 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 51afef8a-692a-433f-bb40-17ed63c5df9a)
     (property "Reference" "#PWR?" (id 0) (at 44.45 68.58 0)
@@ -1457,7 +1457,7 @@
     (pin "1" (uuid 39551167-2709-49bf-bdd4-7d2299c68a6c))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 36.83 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 36.83 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5334cedb-2d8f-40da-8956-4d5393cf0066)
     (property "Reference" "R?" (id 0) (at 36.83 156.21 90))
@@ -1472,7 +1472,7 @@
     (pin "2" (uuid 4dff0a8e-15b6-4ad4-9af2-e1592dfea4bc))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 44.45 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 44.45 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 5483821c-f480-431e-940c-69c1cf7e33ba)
     (property "Reference" "LED?" (id 0) (at 48.26 111.7599 90)
@@ -1515,7 +1515,7 @@
     (pin "2" (uuid eaec69ac-6271-44bd-985b-fc818e04a793))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 100.33 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 100.33 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 558792d4-69a8-40a4-8c89-21dd89fde384)
     (property "Reference" "LED?" (id 0) (at 104.14 143.5099 90)
@@ -1558,7 +1558,7 @@
     (pin "2" (uuid 4e2f2a7a-a680-41b4-9379-b78a46e85a8b))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 92.71 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 92.71 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 57d8192a-a84a-4953-99b6-3e064e222289)
     (property "Reference" "R?" (id 0) (at 92.71 124.46 90))
@@ -1573,7 +1573,7 @@
     (pin "2" (uuid a0157a5c-ddb6-4ae7-932d-0dccd856cb11))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 128.27 44.45 270)
+  (symbol (lib_id "Device:R_Small") (at 128.27 44.45 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6e6c7b99-7131-44a9-a2dd-c30886b75c7b)
     (property "Reference" "R?" (id 0) (at 128.27 39.37 90))
@@ -1588,7 +1588,7 @@
     (pin "2" (uuid dc045a89-d9a0-4637-aa0d-7d00e30de8b3))
   )
 
-  (symbol (lib_id "power:+3V3") (at 154.94 44.45 0)
+  (symbol (lib_id "power:+3V3") (at 154.94 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7c726f5c-48d2-4208-a96c-9712233e03a3)
     (property "Reference" "#PWR?" (id 0) (at 154.94 48.26 0)
@@ -1604,7 +1604,7 @@
     (pin "1" (uuid 8fa3fd1b-872f-468c-8014-2f309b2d46de))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 203.2 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 203.2 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 85ebdc6c-6732-4b7d-8bf4-fe1d1b0ba48f)
     (property "Reference" "R?" (id 0) (at 203.2 124.46 90))
@@ -1619,7 +1619,7 @@
     (pin "2" (uuid f88daf08-5dec-4de2-a303-4b87b6ded87e))
   )
 
-  (symbol (lib_id "power:GND") (at 144.78 152.4 270)
+  (symbol (lib_id "power:GND") (at 144.78 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 8651fc46-3d5f-4d39-96b3-c4f6637c37e1)
     (property "Reference" "#PWR?" (id 0) (at 138.43 152.4 0)
@@ -1635,7 +1635,7 @@
     (pin "1" (uuid 8ace2269-f24b-4a5e-a2f8-2d505810c27e))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 72.39 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 72.39 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 87f80e4c-b247-4252-9f7c-9724559d1951)
     (property "Reference" "LED?" (id 0) (at 76.2 111.7599 90)
@@ -1678,7 +1678,7 @@
     (pin "2" (uuid 0ce72dd4-a162-45ea-a7df-84fd5e648b2b))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 44.45 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 44.45 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8906d63d-ab9f-496c-9d2a-573fdf9f5944)
     (property "Reference" "LED?" (id 0) (at 48.26 143.5099 90)
@@ -1721,7 +1721,7 @@
     (pin "2" (uuid e0519bb8-37d3-47a4-b8c3-d601b26dd865))
   )
 
-  (symbol (lib_id "power:GND") (at 34.29 120.65 270)
+  (symbol (lib_id "power:GND") (at 34.29 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 909b3342-d7a4-434d-bf84-a0cee5e6d5a1)
     (property "Reference" "#PWR?" (id 0) (at 27.94 120.65 0)
@@ -1737,7 +1737,7 @@
     (pin "1" (uuid 5dd64394-59e2-47a7-bc53-ddaad4913f69))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 147.32 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 147.32 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 912e1c40-0106-42d3-a75a-0d726e62ffb4)
     (property "Reference" "R?" (id 0) (at 147.32 156.21 90))
@@ -1752,7 +1752,7 @@
     (pin "2" (uuid 49be45ea-20b1-4928-97b6-c9d47ec6315c))
   )
 
-  (symbol (lib_id "power:GND") (at 62.23 120.65 270)
+  (symbol (lib_id "power:GND") (at 62.23 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 9495855d-aace-450f-9b9a-72243c5089d8)
     (property "Reference" "#PWR?" (id 0) (at 55.88 120.65 0)
@@ -1768,7 +1768,7 @@
     (pin "1" (uuid 00a6897d-5b5d-401d-8773-3e44be061e53))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 182.88 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 182.88 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a2498c7e-af7e-46db-8363-fe05f42f106e)
     (property "Reference" "LED?" (id 0) (at 186.69 111.7599 90)
@@ -1811,7 +1811,7 @@
     (pin "2" (uuid 0f2db87c-3674-489a-8ab2-357b46b52463))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 154.94 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 154.94 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a417f516-45c1-44ea-a482-9f4def1aac3b)
     (property "Reference" "LED?" (id 0) (at 158.75 143.5099 90)
@@ -1854,7 +1854,7 @@
     (pin "2" (uuid c537920f-2670-46ee-9311-8983ae551cf1))
   )
 
-  (symbol (lib_id "power:GND") (at 62.23 152.4 270)
+  (symbol (lib_id "power:GND") (at 62.23 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a4d4131e-25ec-4bb9-a667-5e9de4632f91)
     (property "Reference" "#PWR?" (id 0) (at 55.88 152.4 0)
@@ -1870,7 +1870,7 @@
     (pin "1" (uuid 5e2dc2e3-ea92-40a1-88a5-0217f7e06ee3))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 127 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 127 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a908c14e-8db0-43d6-ad9e-7bc7cd7d2260)
     (property "Reference" "LED?" (id 0) (at 130.81 111.7599 90)
@@ -1913,7 +1913,7 @@
     (pin "2" (uuid 2c427024-ca14-4429-b693-ea483e491065))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 154.94 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 154.94 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ac0d2d6d-98f5-43cb-84e1-62fede006b4b)
     (property "Reference" "LED?" (id 0) (at 158.75 111.7599 90)
@@ -1956,7 +1956,7 @@
     (pin "2" (uuid ba6b251f-4010-4d1c-90d8-15cb1d27ba32))
   )
 
-  (symbol (lib_id "power:GND") (at 227.33 120.65 270)
+  (symbol (lib_id "power:GND") (at 227.33 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b2deb112-a65f-4c3c-9907-5e1dc8e77bef)
     (property "Reference" "#PWR?" (id 0) (at 220.98 120.65 0)
@@ -1972,7 +1972,7 @@
     (pin "1" (uuid e569530e-d27c-43b3-8913-ff0c15200e3c))
   )
 
-  (symbol (lib_id "power:+3V3") (at 130.81 52.07 270)
+  (symbol (lib_id "power:+3V3") (at 130.81 52.07 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b2ff08d7-b8f1-4672-b1f1-bb796fc3abc5)
     (property "Reference" "#PWR?" (id 0) (at 127 52.07 0)
@@ -1990,7 +1990,7 @@
     (pin "1" (uuid 4f8659b4-9afb-40ff-9d6c-09fb3e9fb1f8))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 147.32 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 147.32 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b43ff364-bed1-47c8-a239-364b3326cbe2)
     (property "Reference" "R?" (id 0) (at 147.32 124.46 90))
@@ -2005,7 +2005,7 @@
     (pin "2" (uuid 91521e1d-c5d8-46ae-aa25-3b5c35f20a8f))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 36.83 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 36.83 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b72e30ec-0d31-40db-ba32-0e998396245a)
     (property "Reference" "R?" (id 0) (at 36.83 124.46 90))
@@ -2020,7 +2020,7 @@
     (pin "2" (uuid 0ffe10b3-5d71-4e4c-a424-e48e3eb7febe))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 64.77 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 64.77 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid bada3e35-eecc-497c-9833-2838a3af3ff0)
     (property "Reference" "R?" (id 0) (at 64.77 156.21 90))
@@ -2035,7 +2035,7 @@
     (pin "2" (uuid 5f449ba9-0874-4a69-ad58-95c50963676f))
   )
 
-  (symbol (lib_id "power:GND") (at 172.72 152.4 270)
+  (symbol (lib_id "power:GND") (at 172.72 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid bb9897f9-bcc2-47b6-82bf-54d86ae00aee)
     (property "Reference" "#PWR?" (id 0) (at 166.37 152.4 0)
@@ -2051,7 +2051,7 @@
     (pin "1" (uuid fee27904-610e-48f9-b596-3a1742809429))
   )
 
-  (symbol (lib_id "power:GND") (at 144.78 120.65 270)
+  (symbol (lib_id "power:GND") (at 144.78 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid bc10fe7b-3612-41af-9a8e-722170c0858b)
     (property "Reference" "#PWR?" (id 0) (at 138.43 120.65 0)
@@ -2067,7 +2067,7 @@
     (pin "1" (uuid eea5789d-bd28-4439-9526-f56a74edbbcd))
   )
 
-  (symbol (lib_id "power:GND") (at 116.84 120.65 270)
+  (symbol (lib_id "power:GND") (at 116.84 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid bef2bc59-d126-474f-9f67-5c90f5be42f4)
     (property "Reference" "#PWR?" (id 0) (at 110.49 120.65 0)
@@ -2083,7 +2083,7 @@
     (pin "1" (uuid b0b1deb4-6be6-4964-82b9-e11232225526))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 64.77 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 64.77 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c3631bdd-cc81-40ff-87f4-ccc288141a03)
     (property "Reference" "R?" (id 0) (at 64.77 124.46 90))
@@ -2098,7 +2098,7 @@
     (pin "2" (uuid d4ca871c-4bdf-4ea0-b7bf-5deaafef5d9b))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 237.49 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 237.49 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c7222b6a-06a9-4042-b6f2-a18043608bdc)
     (property "Reference" "LED?" (id 0) (at 241.3 143.5099 90)
@@ -2141,7 +2141,7 @@
     (pin "2" (uuid d63b1719-de7d-40f4-bea6-5db804bbb68d))
   )
 
-  (symbol (lib_id "power:GND") (at 90.17 152.4 270)
+  (symbol (lib_id "power:GND") (at 90.17 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid cbc4414b-6adf-4c33-8782-ccb1cfb0ba14)
     (property "Reference" "#PWR?" (id 0) (at 83.82 152.4 0)
@@ -2157,7 +2157,7 @@
     (pin "1" (uuid 508c7d19-48f5-4ee3-aa0e-ba2fda3817c0))
   )
 
-  (symbol (lib_id "MCP23018-E_SO:MCP23018-E_SO") (at 54.61 40.64 0)
+  (symbol (lib_id "MCP23018-E_SO:MCP23018-E_SO") (at 54.61 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid cf3742b4-b0be-438f-9d82-b93682463e29)
     (property "Reference" "IC?" (id 0) (at 69.85 33.02 0))
@@ -2222,7 +2222,7 @@
     (pin "9" (uuid e0baf026-1c37-4629-b35d-a55cc0930042))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 100.33 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 100.33 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid cf78c488-1611-40a0-85fa-15bfae75637e)
     (property "Reference" "LED?" (id 0) (at 104.14 111.7599 90)
@@ -2265,7 +2265,7 @@
     (pin "2" (uuid d4c3a626-feee-410e-a1ab-e15e8f882e2e))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 210.82 120.65 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 210.82 120.65 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid cfa4937b-26f6-46da-bfe2-415fd70d9280)
     (property "Reference" "LED?" (id 0) (at 214.63 111.7599 90)
@@ -2308,7 +2308,7 @@
     (pin "2" (uuid 622324f2-ccdc-447d-80ca-0a3e1d4945cd))
   )
 
-  (symbol (lib_id "power:GND") (at 200.66 152.4 270)
+  (symbol (lib_id "power:GND") (at 200.66 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d44a585c-2bd6-45b4-8ca6-86f1cc817a05)
     (property "Reference" "#PWR?" (id 0) (at 194.31 152.4 0)
@@ -2324,7 +2324,7 @@
     (pin "1" (uuid dc6dcf42-c3d4-4e9c-a4ad-ea4b77f549d0))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 119.38 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 119.38 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d5785411-d286-4427-a75c-166f2e012298)
     (property "Reference" "R?" (id 0) (at 119.38 156.21 90))
@@ -2339,7 +2339,7 @@
     (pin "2" (uuid 82ae06ee-5911-4fff-9956-2e06d45163df))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 182.88 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 182.88 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d5e787ca-6648-4801-8007-94f763b9aa79)
     (property "Reference" "LED?" (id 0) (at 186.69 143.5099 90)
@@ -2382,7 +2382,7 @@
     (pin "2" (uuid a426fc40-2286-472b-94dc-f43793a75447))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 92.71 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 92.71 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d83c5739-d8dc-4b68-affe-2eaf5763cb6b)
     (property "Reference" "R?" (id 0) (at 92.71 156.21 90))
@@ -2397,7 +2397,7 @@
     (pin "2" (uuid 977cebc6-52a3-4670-b956-822ec273bcfe))
   )
 
-  (symbol (lib_id "power:GND") (at 34.29 152.4 270)
+  (symbol (lib_id "power:GND") (at 34.29 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d84364db-2749-44f9-8f3f-4dd64e769fff)
     (property "Reference" "#PWR?" (id 0) (at 27.94 152.4 0)
@@ -2413,7 +2413,7 @@
     (pin "1" (uuid 4080b200-ee21-4fda-8962-fef350b91a63))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 175.26 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 175.26 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid de7c4491-cb44-4639-9817-3b4f6d2ac622)
     (property "Reference" "R?" (id 0) (at 175.26 124.46 90))
@@ -2428,7 +2428,7 @@
     (pin "2" (uuid 14c4d6ba-97ee-4a06-a655-e4c0b661b494))
   )
 
-  (symbol (lib_id "power:GND") (at 172.72 120.65 270)
+  (symbol (lib_id "power:GND") (at 172.72 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e13dc8ed-1c56-4ae9-8288-c209db7c256b)
     (property "Reference" "#PWR?" (id 0) (at 166.37 120.65 0)
@@ -2444,7 +2444,7 @@
     (pin "1" (uuid 6be5b829-6598-49ef-9bdc-b19b3908a725))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 210.82 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 210.82 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e4bba691-bbd2-4759-8c9f-7724c35e6d7a)
     (property "Reference" "LED?" (id 0) (at 214.63 143.5099 90)
@@ -2487,7 +2487,7 @@
     (pin "2" (uuid 86566720-b176-42b9-bdcb-17ff8d0e7ff8))
   )
 
-  (symbol (lib_id "power:GND") (at 116.84 152.4 270)
+  (symbol (lib_id "power:GND") (at 116.84 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e69f0c53-ce71-44b0-9828-fcd3ab914d69)
     (property "Reference" "#PWR?" (id 0) (at 110.49 152.4 0)
@@ -2503,7 +2503,7 @@
     (pin "1" (uuid 87f93fc9-b024-45b9-8b22-2ab1740e6d56))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 229.87 152.4 270)
+  (symbol (lib_id "Device:R_Small") (at 229.87 152.4 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e7f69172-caf1-4fed-bee6-ef3906b5f683)
     (property "Reference" "R?" (id 0) (at 229.87 156.21 90))
@@ -2518,7 +2518,7 @@
     (pin "2" (uuid 1daf33fc-dca1-4159-991e-5821b1a2547f))
   )
 
-  (symbol (lib_id "Device:R_Small") (at 229.87 120.65 270)
+  (symbol (lib_id "Device:R_Small") (at 229.87 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ec71cdaa-0605-4139-905a-a1122c4f226d)
     (property "Reference" "R?" (id 0) (at 229.87 124.46 90))
@@ -2533,7 +2533,7 @@
     (pin "2" (uuid f5a7b44a-4461-44e6-bc3d-474ae26b2c68))
   )
 
-  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 72.39 152.4 90)
+  (symbol (lib_id "XZMYK45WT-9:XZMYK45WT-9") (at 72.39 152.4 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f6959a67-8719-49d3-9608-8ec7cdb63e2f)
     (property "Reference" "LED?" (id 0) (at 76.2 143.5099 90)
@@ -2576,7 +2576,7 @@
     (pin "2" (uuid 7ef20b6d-137b-486f-bac0-f1804ce6a99a))
   )
 
-  (symbol (lib_id "power:GND") (at 154.94 52.07 0)
+  (symbol (lib_id "power:GND") (at 154.94 52.07 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f730121f-8b6c-4633-b087-6e98b0e7037f)
     (property "Reference" "#PWR?" (id 0) (at 154.94 58.42 0)
@@ -2592,7 +2592,7 @@
     (pin "1" (uuid e2de4d49-72f6-45d6-ab76-5d9e64387343))
   )
 
-  (symbol (lib_id "power:GND") (at 90.17 120.65 270)
+  (symbol (lib_id "power:GND") (at 90.17 120.65 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ff6981cb-e651-4d63-9626-f31d564f0e67)
     (property "Reference" "#PWR?" (id 0) (at 83.82 120.65 0)
