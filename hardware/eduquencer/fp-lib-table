@@ -8,4 +8,5 @@
   (lib (name "SN74AHCT244NSR")(type "KiCad")(uri "${KIPRJMOD}/models/SN74AHCT244NSR.pretty")(options "")(descr ""))
   (lib (name "Panel")(type "KiCad")(uri "${KIPRJMOD}/../../design/footprint")(options "")(descr ""))
   (lib (name "AudioJacks")(type "KiCad")(uri "${KIPRJMOD}/models/AudioJacks.pretty")(options "")(descr ""))
+  (lib (name "XZMYK45WT-9")(type "KiCad")(uri "${KIPRJMOD}/models/XZMYK45WT-9.pretty")(options "")(descr ""))
 )
