@@ -9,11 +9,11 @@
   - [x] Add debug header for flashing the rpi
   - [x] Add all the trigger jacks (+circuit around them, there might be some more resistors needed?)
   - [x] Add test-points for all i2c and SPI
-  - [ ] Check all GND in analog parts and change to GNDA (cv-in?)
+  - [x] Check all GND in analog parts and change to GNDA (cv-in?)
+  - [x] Annotate all parts
+  - [ ] Assign footprints (all footprints should be the kicad handsolder ones)
   - [ ] Add LED circuits for CV in (op-amps)
   - [ ] Adjust DAC opamp resistor for proper range (+add DAC out jack)
-- [ ] Annotate all parts
-- [ ] Assign footprints (all footprints should be the kicad handsolder ones)
 - [ ] Preliminary layout with all components (only footprint placement)
 - [ ] Decide on a name
 - [ ] Decide which jacks to use
