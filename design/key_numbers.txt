@@ -2,6 +2,10 @@
   width = 71,1
   height = 128,5
 
+# mid point
+  x = 35,55
+  y = 64,25
+
 # panel frame
   left = 7,5
   right = 63,6
